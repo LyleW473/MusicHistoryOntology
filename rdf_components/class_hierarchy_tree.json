@@ -1,0 +1,89 @@
+{
+    "AbstractScore": {},
+    "Agent": {
+        "Person": {
+            "Female": {},
+            "Male": {},
+            "Musician": {
+                "Female": {},
+                "Male": {}
+            }
+        },
+        "Organization": {
+            "RecordLabel": {}
+        },
+        "Broadcaster": {},
+        "Publisher": {}
+    },
+    "AgentRole": {},
+    "Award": {},
+    "CompositionPart": {
+        "Movement": {},
+        "Section": {}
+    },
+    "Continent": {},
+    "CreativeAction": {},
+    "CreativeProcess": {
+        "MusicalPerformance": {
+            "LivePerformance": {},
+            "StudioPerformance": {}
+        },
+        "RecordingProcess": {}
+    },
+    "DedicationStatement": {},
+    "Description": {},
+    "Event": {
+        "CulturalEvent": {},
+        "PerformanceEvent": {}
+    },
+    "FormType": {},
+    "InformationObject": {
+        "Instrument": {},
+        "MusicEntity": {
+            "Opera": {},
+            "Song": {}
+        }
+    },
+    "InformationRealization": {
+        "InstrumentRealization": {},
+        "MusicalPerformance": {
+            "LivePerformance": {},
+            "StudioPerformance": {}
+        }
+    },
+    "Instrumentation": {},
+    "Key": {},
+    "Language": {},
+    "License": {},
+    "MusicArtist": {
+        "MusicEnsemble": {},
+        "Musician": {
+            "Female": {},
+            "Male": {}
+        }
+    },
+    "MusicEnsembleMembership": {},
+    "MusicGenre": {},
+    "MusicTimeDuration": {},
+    "Place": {
+        "Address": {},
+        "City": {},
+        "Country": {},
+        "Street": {}
+    },
+    "Recording": {},
+    "RecordingEquipment": {},
+    "Release": {
+        "Album": {},
+        "Single": {}
+    },
+    "Role": {},
+    "Text": {
+        "Libretto": {},
+        "Lyrics": {}
+    },
+    "TextFragment": {},
+    "Thing": {},
+    "TimeInterval": {},
+    "Type": {}
+}

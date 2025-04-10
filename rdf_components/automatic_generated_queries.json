@@ -1,0 +1,499 @@
+{
+    "Thing": {},
+    "Thing.AbstractScore": {
+        "Sonata No. 14 (Moonlight Sonata)": {
+            "id": "2415f9c4-2fc0-4935-8861-648f2e60e3e5",
+            "predicted_class": "Thing.AbstractScore",
+            "search_query": "Sonata No. 14 (Moonlight Sonata)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Agent": {},
+    "Thing.Agent.Broadcaster": {
+        "BBC Radio 1": {
+            "id": "9c252818-f58f-4f6d-a6fd-3b22173e83a4",
+            "predicted_class": "Thing.Agent.Broadcaster",
+            "search_query": "BBC Radio 1",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Agent.Organization": {},
+    "Thing.Agent.Organization.RecordLabel": {
+        "Sony Music Entertainment": {
+            "id": "afcace29-9d05-47c4-a95b-67802b6b6709",
+            "predicted_class": "Thing.Agent.Organization.RecordLabel",
+            "search_query": "Sony Music Entertainment",
+            "alias": null,
+            "json_data": null
+        },
+        "Atlantic Records": {
+            "id": "cbe7d0ae-d902-4068-962d-738244905cdf",
+            "predicted_class": "Thing.Agent.Organization.RecordLabel",
+            "search_query": "Atlantic Records",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Agent.Person": {},
+    "Thing.Agent.Person.Female": {},
+    "Thing.Agent.Person.Male": {},
+    "Thing.Agent.Person.Musician": {},
+    "Thing.Agent.Person.Musician.Female": {
+        "Ella Fitzgerald": {
+            "id": "3f03203c-3bbc-46f8-9838-5fc3bdbcff10",
+            "predicted_class": "Thing.Agent.Person.Musician.Female",
+            "search_query": "Ella Fitzgerald",
+            "alias": null,
+            "json_data": null
+        },
+        "Aretha Franklin": {
+            "id": "c20ca875-73c6-4103-a418-ce9a635e6d11",
+            "predicted_class": "Thing.Agent.Person.Musician.Female",
+            "search_query": "Aretha Franklin",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Agent.Person.Musician.Male": {
+        "Elvis Costello": {
+            "id": "4804efbb-e649-46a4-a5fd-7c19f02e6416",
+            "predicted_class": "Thing.Agent.Person.Musician.Male",
+            "search_query": "Elvis Costello",
+            "alias": null,
+            "json_data": null
+        },
+        "Bob Dylan": {
+            "id": "e65a0b96-b24c-4efc-a9c3-b3b7b2ee6647",
+            "predicted_class": "Thing.Agent.Person.Musician.Male",
+            "search_query": "Bob Dylan",
+            "alias": null,
+            "json_data": null
+        },
+        "Freddie Mercury": {
+            "id": "c4fbc7c9-0709-4cf3-808c-6bd969cce6a0",
+            "predicted_class": "Thing.Agent.Person.Musician.Male",
+            "search_query": "Freddie Mercury",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Agent.Publisher": {},
+    "Thing.AgentRole": {},
+    "Thing.Award": {
+        "Grammy Awards 2023": {
+            "id": "8f7e0f4b-49a2-433c-a1ee-3a05e6d8fa6b",
+            "predicted_class": "Thing.Award",
+            "search_query": "Grammy Awards 2023",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.CompositionPart": {},
+    "Thing.CompositionPart.Movement": {
+        "Adagio (composition)": {
+            "id": "9a356822-66c4-43aa-8aa0-c5233bf38881",
+            "predicted_class": "Thing.CompositionPart.Movement",
+            "search_query": "Adagio (composition)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.CompositionPart.Section": {
+        "Allegro (musical section)": {
+            "id": "0d4d02b2-1f01-48d3-9983-2982c31d1025",
+            "predicted_class": "Thing.CompositionPart.Section",
+            "search_query": "Allegro (musical section)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Continent": {
+        "Africa": {
+            "id": "c735a843-faea-4996-90d8-79c07c395b6a",
+            "predicted_class": "Thing.Continent",
+            "search_query": "Africa",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.CreativeAction": {},
+    "Thing.CreativeProcess": {},
+    "Thing.CreativeProcess.MusicalPerformance": {},
+    "Thing.CreativeProcess.MusicalPerformance.LivePerformance": {
+        "Bj\u00f6rk (Live Performance)": {
+            "id": "e356a9e5-fa26-42ae-a4eb-e2755d4a066e",
+            "predicted_class": "Thing.CreativeProcess.MusicalPerformance.LivePerformance",
+            "search_query": "Bj\u00f6rk (Live Performance)",
+            "alias": null,
+            "json_data": null
+        },
+        "Bj\u00f6rk Live at Royal Albert Hall": {
+            "id": "9742ee5c-b660-4eae-8cae-f59af1c52fa4",
+            "predicted_class": "Thing.CreativeProcess.MusicalPerformance.LivePerformance",
+            "search_query": "Bj\u00f6rk Live at Royal Albert Hall",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.CreativeProcess.MusicalPerformance.StudioPerformance": {
+        "Bj\u00f6rk (Studio Performance)": {
+            "id": "36028fad-13e9-431a-a892-23bcca5e7511",
+            "predicted_class": "Thing.CreativeProcess.MusicalPerformance.StudioPerformance",
+            "search_query": "Bj\u00f6rk (Studio Performance)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.CreativeProcess.RecordingProcess": {
+        "Recording process of Abbey Road": {
+            "id": "8db88e60-980c-44f6-b86f-7fffdf7d455e",
+            "predicted_class": "Thing.CreativeProcess.RecordingProcess",
+            "search_query": "Recording process of Abbey Road",
+            "alias": null,
+            "json_data": null
+        },
+        "Recording process of Thriller": {
+            "id": "059d903a-25fd-4128-9980-342233a27d8a",
+            "predicted_class": "Thing.CreativeProcess.RecordingProcess",
+            "search_query": "Recording process of Thriller",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.DedicationStatement": {
+        "Dedication of The Dark Side of the Moon": {
+            "id": "2f23852a-2c6f-428c-9686-7d42a5687f95",
+            "predicted_class": "Thing.DedicationStatement",
+            "search_query": "Dedication of The Dark Side of the Moon",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Description": {
+        "Musical description": {
+            "id": "67528868-fbf7-4bb7-9c86-afa752e6dc21",
+            "predicted_class": "Thing.Description",
+            "search_query": "Musical description",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Event": {},
+    "Thing.Event.CulturalEvent": {
+        "Glastonbury Festival 2023": {
+            "id": "bc5fe9ea-57f3-459a-a442-a661d94bc53c",
+            "predicted_class": "Thing.Event.CulturalEvent",
+            "search_query": "Glastonbury Festival 2023",
+            "alias": null,
+            "json_data": null
+        },
+        "Montreux Jazz Festival": {
+            "id": "b15f8e23-a167-4bec-aa14-4fb02bcad965",
+            "predicted_class": "Thing.Event.CulturalEvent",
+            "search_query": "Montreux Jazz Festival",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Event.PerformanceEvent": {
+        "The Concert for Bangladesh": {
+            "id": "66a578ff-c4b1-49f3-8cb5-bab9c21641c6",
+            "predicted_class": "Thing.Event.PerformanceEvent",
+            "search_query": "The Concert for Bangladesh",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.FormType": {
+        "Sonata (Form Type)": {
+            "id": "77d67f9e-130f-4900-aacd-a7c0edda018e",
+            "predicted_class": "Thing.FormType",
+            "search_query": "Sonata (Form Type)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.InformationObject": {},
+    "Thing.InformationObject.Instrument": {
+        "Guitar": {
+            "id": "9274865f-07b6-4516-8f0e-40fe04544928",
+            "predicted_class": "Thing.InformationObject.Instrument",
+            "search_query": "Guitar",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.InformationObject.MusicEntity": {
+        "Symphony No. 5 (Beethoven)": {
+            "id": "59718e85-f477-415d-8acd-13dc56f72b60",
+            "predicted_class": "Thing.InformationObject.MusicEntity",
+            "search_query": "Symphony No. 5 (Beethoven)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.InformationObject.MusicEntity.Opera": {
+        "The Marriage of Figaro": {
+            "id": "8016ca26-735e-499d-b5a8-e716057750e5",
+            "predicted_class": "Thing.InformationObject.MusicEntity.Opera",
+            "search_query": "The Marriage of Figaro",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.InformationObject.MusicEntity.Song": {
+        "Bohemian Rhapsody": {
+            "id": "06cfeac1-f613-4053-9c79-24282e00f25a",
+            "predicted_class": "Thing.InformationObject.MusicEntity.Song",
+            "search_query": "Bohemian Rhapsody",
+            "alias": null,
+            "json_data": null
+        },
+        "Wonderwall (Oasis)": {
+            "id": "ae96aaa0-1b1d-4cb0-9744-acf310e65d5a",
+            "predicted_class": "Thing.InformationObject.MusicEntity.Song",
+            "search_query": "Wonderwall (Oasis)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.InformationRealization": {},
+    "Thing.InformationRealization.InstrumentRealization": {},
+    "Thing.InformationRealization.MusicalPerformance": {},
+    "Thing.InformationRealization.MusicalPerformance.LivePerformance": {},
+    "Thing.InformationRealization.MusicalPerformance.StudioPerformance": {},
+    "Thing.Instrumentation": {
+        "Orchestral Music (Instrumentation)": {
+            "id": "2a2c87f5-946b-4dd7-8380-983f3b470161",
+            "predicted_class": "Thing.Instrumentation",
+            "search_query": "Orchestral Music (Instrumentation)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Key": {
+        "C Major": {
+            "id": "f33904bf-e994-452a-999e-48459237113e",
+            "predicted_class": "Thing.Key",
+            "search_query": "C Major",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Language": {
+        "Spanish": {
+            "id": "ab6dedb7-0125-485b-9623-7518804d571b",
+            "predicted_class": "Thing.Language",
+            "search_query": "Spanish",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.License": {
+        "Creative Commons License": {
+            "id": "c7d8bbfc-bb7b-4580-8928-c98402acc76d",
+            "predicted_class": "Thing.License",
+            "search_query": "Creative Commons License",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.MusicArtist": {},
+    "Thing.MusicArtist.MusicEnsemble": {
+        "The London Philharmonic Orchestra": {
+            "id": "70ce7434-228e-4fae-9b05-8de1d68f4832",
+            "predicted_class": "Thing.MusicArtist.MusicEnsemble",
+            "search_query": "The London Philharmonic Orchestra",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.MusicArtist.Musician": {},
+    "Thing.MusicArtist.Musician.Female": {
+        "Ariana Grande": {
+            "id": "cac06384-a4cd-4053-962d-58e9ffc657fc",
+            "predicted_class": "Thing.MusicArtist.Musician.Female",
+            "search_query": "Ariana Grande",
+            "alias": null,
+            "json_data": null
+        },
+        "Ariana Grande (Musician)": {
+            "id": "7178b21d-17bc-4128-8897-829dde5179eb",
+            "predicted_class": "Thing.MusicArtist.Musician.Female",
+            "search_query": "Ariana Grande (Musician)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.MusicArtist.Musician.Male": {},
+    "Thing.MusicEnsembleMembership": {},
+    "Thing.MusicGenre": {
+        "Blues Rock": {
+            "id": "ab1c3a24-5789-4aa9-a7bf-18805d25b579",
+            "predicted_class": "Thing.MusicGenre",
+            "search_query": "Blues Rock",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.MusicTimeDuration": {
+        "Sonata No. 1 (Music Time Duration)": {
+            "id": "1ede2602-e533-45bb-a276-f1d111334799",
+            "predicted_class": "Thing.MusicTimeDuration",
+            "search_query": "Sonata No. 1 (Music Time Duration)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Place": {},
+    "Thing.Place.Address": {
+        "1234 Sunset Boulevard": {
+            "id": "df33ac5f-a27b-441f-894f-67d82052a66d",
+            "predicted_class": "Thing.Place.Address",
+            "search_query": "1234 Sunset Boulevard",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Place.City": {
+        "New Orleans": {
+            "id": "0d30c921-3fb3-4821-8195-efa5b5118b23",
+            "predicted_class": "Thing.Place.City",
+            "search_query": "New Orleans",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Place.Country": {
+        "Spain": {
+            "id": "eeb62c4c-190d-46f7-85c8-1485c0fda618",
+            "predicted_class": "Thing.Place.Country",
+            "search_query": "Spain",
+            "alias": null,
+            "json_data": null
+        },
+        "Italy": {
+            "id": "b89da3ce-3981-489f-ae4b-0a5d85d13f96",
+            "predicted_class": "Thing.Place.Country",
+            "search_query": "Italy",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Place.Street": {
+        "Abbey Road (Street)": {
+            "id": "b93e910b-0933-471e-a81d-c08232458c91",
+            "predicted_class": "Thing.Place.Street",
+            "search_query": "Abbey Road (Street)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Recording": {
+        "Abbey Road (Recording)": {
+            "id": "ac190f37-a307-4776-a62e-52eb83df01a6",
+            "predicted_class": "Thing.Recording",
+            "search_query": "Abbey Road (Recording)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.RecordingEquipment": {
+        "Neumann U87": {
+            "id": "b91f19ea-2927-49ba-bdbd-aea54724c0a9",
+            "predicted_class": "Thing.RecordingEquipment",
+            "search_query": "Neumann U87",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Release": {},
+    "Thing.Release.Album": {
+        "Random Access Memories (Daft Punk)": {
+            "id": "c31a3a1f-b6b9-4454-8541-ff77f2424f2b",
+            "predicted_class": "Thing.Release.Album",
+            "search_query": "Random Access Memories (Daft Punk)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Release.Single": {
+        "Born to Run (Bruce Springsteen)": {
+            "id": "f8c635e4-8820-42e4-8763-252823025b59",
+            "predicted_class": "Thing.Release.Single",
+            "search_query": "Born to Run (Bruce Springsteen)",
+            "alias": null,
+            "json_data": null
+        },
+        "Billie Jean (Single)": {
+            "id": "96dae3b7-243a-44c4-a91c-ce22e0199596",
+            "predicted_class": "Thing.Release.Single",
+            "search_query": "Billie Jean (Single)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Role": {},
+    "Thing.Text": {
+        "Ancient Greek Lyric Poetry": {
+            "id": "21c6c1b9-a25e-4c14-8173-e9397d89fe95",
+            "predicted_class": "Thing.Text",
+            "search_query": "Ancient Greek Lyric Poetry",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Text.Libretto": {
+        "The Magic Flute (Libretto)": {
+            "id": "57343c09-2e03-49c0-98c9-faa5039f15e2",
+            "predicted_class": "Thing.Text.Libretto",
+            "search_query": "The Magic Flute (Libretto)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Text.Lyrics": {
+        "Verse from Bohemian Rhapsody": {
+            "id": "c8a1c042-373a-4c41-aaee-27defb7d06b9",
+            "predicted_class": "Thing.Text.Lyrics",
+            "search_query": "Verse from Bohemian Rhapsody",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.TextFragment": {},
+    "Thing.TimeInterval": {
+        "Renaissance (Time Period)": {
+            "id": "8231c644-b0af-460e-aa12-3f9cb67a18dd",
+            "predicted_class": "Thing.TimeInterval",
+            "search_query": "Renaissance (Time Period)",
+            "alias": null,
+            "json_data": null
+        }
+    },
+    "Thing.Type": {
+        "Sonata (Type)": {
+            "id": "b31f8ba3-b8dd-4dec-91b3-d9beabb749ae",
+            "predicted_class": "Thing.Type",
+            "search_query": "Sonata (Type)",
+            "alias": null,
+            "json_data": null
+        },
+        "Ballad (Type)": {
+            "id": "81033f9d-5ccf-4175-a998-c031f4365b97",
+            "predicted_class": "Thing.Type",
+            "search_query": "Ballad (Type)",
+            "alias": null,
+            "json_data": null
+        },
+        "Song (Type)": {
+            "id": "a40deb51-9ef3-475c-8d6f-56938ece2f60",
+            "predicted_class": "Thing.Type",
+            "search_query": "Song (Type)",
+            "alias": null,
+            "json_data": null
+        }
+    }
+}

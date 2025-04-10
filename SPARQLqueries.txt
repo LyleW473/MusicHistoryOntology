@@ -1,0 +1,292 @@
+#1
+when was the first jazz song released
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT ?single ?date
+WHERE { 
+    ?single rdf:type ex:Single .
+    ?single mm:hasGenre ex:Jazz .
+    ?single ex:hasReleaseDate ?date 
+}
+ORDER BY ASC(?date)
+LIMIT 1
+
+
+#2
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+
+SELECT ?band WHERE {
+  ex:LiveAid core:wasPerformedBy ?band .
+}
+
+
+#3
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX mon: <https://w3id.org/MON/person.owl#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT ?person ?birthDate WHERE {
+  ?person a mm:Musician ;
+          mon:hasLastName "Mozart" ;
+          mon:hasBirthDate ?birthDate .
+}
+
+
+
+#4
+
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mon: <https://w3id.org/MON/person.owl#>
+
+SELECT ?artist WHERE {
+  ?artist mon:worksWith ?person .
+  ?person core:hasName ?name .
+  FILTER(STR(?name) = "Rick Rubin")
+}
+
+
+#5
+
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <https://w3id.org/polifonia/ontology/instrument/>
+
+SELECT ?country WHERE {
+  ?instrument a ins:Instrument ;
+              core:hasName "Piccolo"^^xsd:string ;
+              ins:wasBuiltIn ?country .
+}
+
+
+#6 
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT ?producer WHERE {
+  ?song a ex:Song .
+  ?song core:hasTitle "Superhero"^^xsd:string .
+  ?song mm:isPartOfRelease ?album .
+  ?album core:hasTitle "Heroes and Villains"^^xsd:string .
+  ?song ex:hasProducer ?producer .
+}
+
+
+#7 
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <https://w3id.org/polifonia/ontology/instrument/>
+PREFIX dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#>
+
+SELECT ?date WHERE {
+  ?instrument core:hasName "Viola"^^xsd:string  .
+  ?instrument ins:wasInventedAtTime ?timeInterval .
+  ?timeInterval dul:hasIntervalDate ?date
+}
+
+
+#8
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+
+SELECT ?country WHERE {
+  ?piece a mm:MusicGenre ;
+         core:hasName "Classical"^^xsd:string ;
+         ex:wasReleasedIn ?country .
+}
+
+#9
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX mon: <https://w3id.org/MON/person.owl#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT ?person ?deathDate WHERE {
+  ?person a mm:Musician ;
+          mon:hasLastName "Mozart" ;
+          mon:hasDeathDate ?deathDate .
+}
+
+
+#10 
+
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX mon: <https://w3id.org/MON/person.owl#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT ?award ?year WHERE {
+  ?person core:hasName "Kanye West"^^xsd:string ;
+          mm:receivedAward ?award .
+
+  ?award core:hasName "Grammy"^^xsd:string ;
+         ex:hasAwardYear ?year .
+}
+
+
+
+#11
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX mon: <https://w3id.org/MON/person.owl#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+
+SELECT ?city WHERE {
+  ?person core:hasName "Frédéric Chopin"^^xsd:string ;
+          core:hasBirthPlace ?city .
+}
+
+
+#12
+
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+
+SELECT ?composer WHERE {
+  ?opera a ex:Opera ;
+         core:hasName "La traviata"^^xsd:string ;
+         ex:hasComposer ?composer .
+}
+
+#13 
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+
+SELECT ?date WHERE {
+  ?piece core:hasName "Rhapsody in Blue"^^xsd:string ;
+         ex:wasPerformedAt ?performance .
+
+  ?performance core:hasStartTime ?date .
+}
+
+
+#14
+
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT ?lyricist WHERE {
+  ?song a ex:Song ;
+        core:hasName "Stairway to Heaven"^^xsd:string ;
+        ex:hasLyricist ?lyricist .
+}
+
+
+#15
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX ins: <https://w3id.org/polifonia/ontology/instrument/>
+
+SELECT ?inventor WHERE {
+  ?instrument core:hasName "Saxophone"^^xsd:string ;
+              ins:wasInventedBy ?inventor .
+}
+
+
+#16   
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+
+SELECT ?single ?date
+WHERE { 
+    ?single rdf:type ex:Single .
+    ?single core:hasTitle "That's All Right"^^xsd:string .
+    ?single ex:hasReleaseDate ?date 
+}
+
+
+#17
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX mon: <https://w3id.org/MON/person.owl#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mus: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_music_ontology#>
+
+SELECT ?label WHERE {
+  ?person core:hasName "Miles Davis"^^xsd:string ;
+          mus:wasSignedTo ?label .
+}
+
+
+#18  
+
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT ?conductor WHERE {
+  ?membership a mm:MusicEnsembleMembership ;
+              mm:involvesMemberOfMusicEnsemble ?conductor ;
+              mm:involvesMusicEnsemble ex:BerlinPhilharmonic ;
+              core:hasStartTime ?start ;
+              core:hasEndTime ?end .
+
+  FILTER (?start <= "1955" && ?end >= "1989")
+}
+
+
+
+
+#19
+
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT ?composer WHERE {
+  ?work a ex:Song ;
+        core:hasName "The Planets"^^xsd:string ;
+        ex:hasComposer ?composer .
+}
+
+
+#20   
+
+PREFIX ex: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_of_music#>
+PREFIX hmo: <http://www.semanticweb.org/lianmatsuo/ontologies/2025/2/history_music_ontology#>
+PREFIX core: <https://w3id.org/polifonia/ontology/core/>
+
+SELECT ?city ?year WHERE {
+  ex:NinthSymphony a hmo:PerformanceEvent ;
+                   ex:wasPerformedBy ?person ;
+                   ex:wasPerformedIn ?city ;
+                   ex:hasReleaseYear ?year .
+  ?person core:hasName "Ludwig van Beethoven"^^xsd:string .
+}
+ORDER BY ASC(?year)
+LIMIT 1
+
+
+
+
+
+
+
+
+
+
