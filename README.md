@@ -9,7 +9,7 @@
 ## Workflow
 
 The process of ingesting data from Wikipedia involves these steps:
-1.  **Install requirements**: Run 'pip install -r requirements.txt' within your virtual environment in the command terminal.
+1.  **Install requirements**: Run `pip install -r requirements.txt` within your virtual environment in the command terminal.
 2.  **Create RDF components**: Run the `scripts/create_rdf_components.py` script:  
     *How it works:* This script is used to generate components necessary for generating data instances in the Wikipedia data ingestion pipeline and also for the construction of the final knowledge graph.
 3.  **Generate Wikipedia Instances**: Run the `scripts/fetch_wikipedia_data.py` script:  
@@ -17,7 +17,7 @@ The process of ingesting data from Wikipedia involves these steps:
 
 
 # Constructing Knowledge Graph
-# Workflow
+## Workflow
 The process for creating a knowledge graph:
 1.  **Creating Knowledge graph**: Run the `scripts/create_final_ontology.py` script:  
     *How it works:* This script is used to create the final knowledge graph
@@ -41,34 +41,3 @@ The process of ingesting data from MusicBrainz involves two main steps:
     ```
     *How it works:* This script takes the raw, entity-specific JSON files generated in the previous step (located in `data/`) and transforms them into a format suitable for ontology population or other structured use cases. It reads the class and property mapping rules defined in `rdf_components/class_property_mappings.json`. Using these rules, it identifies the target ontology class for each entity (e.g., mapping a raw 'Musician' JSON to `Thing.MusicArtist.Musician`). It then restructures the properties from the raw JSON, aligning them with the expected object and data properties defined in the mappings.
     *Output:* The script consolidates all entities belonging to the same target class into a single output JSON file named after that class (e.g., `Thing.MusicArtist.Musician.json`). These consolidated files, containing standardized data structures, are saved in the `musicbrainz_data/` directory.
-
-## Exporting Data
-
-The JSON output from the Open Opus scraper is fully exportable and designed to be easily ingested by other tools or databases. Developers can transform this data into various ontological frameworks for comprehensive analysis.
-
-## Setup and Running the Open Opus Scraper
-
-1. **Install dependencies using Poetry (if not already installed):**
-   ```bash
-   poetry install
-   ```
-
-2. **Run the Open Opus scraper:**
-   ```bash
-   poetry run python -m music_history_ontology.openopus_scraper
-   ```
-
-3. **Data Output:**
-   The scraped data will be saved to `openopus_data.json`.
-
-4. **Run unit tests (if available):**
-   ```bash
-   poetry run pytest
-   ```
-
-## Setup and Running the Open Opus Scraper
-Ontology Visualisation: https://service.tib.eu/webvowl/#opts=sidebar=0;#file=ontology.ttl
-
-## Additional Notes
-- The Open Opus scraper includes a backoff-retry strategy to handle rate limiting by the API.
-- This scraper is designed to ingest classical music metadata from Open Opus and structure it for further use in building your music history ontology.
